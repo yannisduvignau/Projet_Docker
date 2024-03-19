@@ -13,13 +13,13 @@ Ce projet est une application web Python avec une base de données PostgreSQL à
 projet-docker/
 │
 ├── sql/
-│ └── Dockerfile # Fichier Docker utilisé pour construire l'image de Postgres
-│ └── world.sql # Fichier SQL contenant les données initiales à charger dans la BDD
+│    └── Dockerfile # Fichier Docker pour construire l'image de Postgres
+│    └── world.sql # Fichier SQL contenant les données initiales à charger dans la BDD
 ├── web/
-│ └── app.py # Fichier principal de l'application Python
-│ └── Dockerfile # Fichier Docker utilisé pour construire l'image de l'application python avec Flask
-│ └── templates/
-│ └── index.html # Fichier HTML pour afficher les données de la base de données
+│    └── app.py # Fichier principal de l'application Python
+│    └── Dockerfile # Fichier Docker utilisé pour construire l'image de l'application python avec Flask
+│    └── templates/
+│    └── index.html # Fichier HTML pour afficher les données de la base de données
 ├── docker-compose.yml # Fichier Docker Compose qui permet d'orchestrer plusieurs conteneurs
 └── README.md # Ce fichier README
 
@@ -70,8 +70,3 @@ Pour finir, maintenant que la base de données et le serveur web sont en place, 
 1. Premièrement, on importe Flask qui va nous servir pour l'exécution de Python côté web. On importe également render_template pour envoyer les données dans un index.html. Et enfin, on importe psycopg qui sert à faire la connexion à la BDD en PostgreSQL.
 2. Deuxiemement, il faut créer l'application et la connexion.
 3. Enfin, on récupère les informations dans la base de données et on les envoie à l'index.html.
-
-
-```
-
-```
